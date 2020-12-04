@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdd95745-34d2-426d-ab55-88be5c40d10c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$/../konseling-covid-api" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iBlpIoRNRVJmtCJK7dsulHdwaZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/usecase/mock_interactor/user" />
+      <recent name="$PROJECT_DIR$/registry/mock_registry" />
+      <recent name="$PROJECT_DIR$/registry" />
+      <recent name="$PROJECT_DIR$/domain/model/user" />
+      <recent name="$PROJECT_DIR$/domain/model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestUserController_RegisterFail in golang-clean-architecture/interface/controller/user">
+    <configuration name="TestUserController_Register in golang-clean-architecture/interface/controller/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-clean-architecture" />
+      <working_directory value="$PROJECT_DIR$/interface/controller/user" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang-clean-architecture/interface/controller/user" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestUserController_Register$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserController_RegisterAsd in golang-clean-architecture/interface/controller/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-clean-architecture" />
+      <working_directory value="$PROJECT_DIR$/interface/controller/user" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang-clean-architecture/interface/controller/user" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestUserController_RegisterAsd$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserController_RegisterFail in golang-clean-architecture/interface/controller/user" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-clean-architecture" />
+      <working_directory value="$PROJECT_DIR$/interface/controller/user" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang-clean-architecture/interface/controller/user" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestUserController_RegisterFail$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Hm in golang-clean-architecture/infrastructure/router" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-clean-architecture" />
+      <working_directory value="$PROJECT_DIR$/infrastructure/router" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang-clean-architecture/infrastructure/router" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_Hm$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Register in golang-clean-architecture/infrastructure/router" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang-clean-architecture" />
+      <working_directory value="$PROJECT_DIR$/infrastructure/router" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang-clean-architecture/infrastructure/router" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_Register$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestUserController_RegisterFail in golang-clean-architecture/interface/controller/user" />
+        <item itemvalue="Go Test.TestUserController_RegisterAsd in golang-clean-architecture/interface/controller/user" />
+        <item itemvalue="Go Test.TestUserController_Register in golang-clean-architecture/interface/controller/user" />
+        <item itemvalue="Go Test.Test_Register in golang-clean-architecture/infrastructure/router" />
+        <item itemvalue="Go Test.Test_Hm in golang-clean-architecture/infrastructure/router" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="28" width="1680" height="1022" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1606213077969">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="0" y="28" width="1680" height="1022" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1606213077969" />
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1606751433361">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1606749525479" />
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1606751433361" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1606751433360">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1606749525478" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1606751433360" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1606751433360">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1606749525477" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1606751433360" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1606751433360">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1606749525478" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1606751433360" />
+    <state x="503" y="282" width="827" height="550" key="find.popup" timestamp="1606197004825">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="503" y="282" width="827" height="550" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1606197004825" />
+    <state x="503" y="300" width="674" height="486" key="find.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1603597119733" />
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1602513714349">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1602513714349" />
+  </component>
+</project>

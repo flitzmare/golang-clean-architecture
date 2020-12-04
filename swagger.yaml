@@ -1,0 +1,229 @@
+swagger: "2.0"
+info:
+  description: "This is a golang retail example project API docs"
+  version: "1.0.0"
+  title: "Golang Retail"
+  contact:
+    email: "riksasuviana@gmail.com"
+host: "localhost:1234"
+tags:
+  - name: "user"
+    description: "Everything about your Users"
+  - name: "admin"
+    description: "Admin only restricted"
+  - name: "product"
+    description: "Product endpoints"
+  - name: "transaction"
+    description: "Transaction endpoints"
+schemes:
+  - "https"
+  - "http"
+paths:
+  /register:
+    post:
+      tags:
+        - "user"
+      summary: "Register new user"
+      description: ""
+      operationId: "registerUser"
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Attributes that needs to be added to this endpoint"
+          required: true
+          schema:
+            $ref: "#/definitions/Register"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            type: "string"
+        400:
+          description: "This username is already exist"
+          schema:
+            type: "string"
+        422:
+          description: "Invalid input"
+          schema:
+            type: "string"
+            example: "Key: 'RegisterRequest.Username' Error:Field validation for 'Username' failed on the 'required' tag\nKey: 'RegisterRequest.Password' Error:Field validation for 'Password' failed on the 'required' tag"
+  /login:
+    post:
+      tags:
+        - "user"
+      summary: "Login to get auth token"
+      description: ""
+      operationId: "loginUser"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "body"
+          in: "body"
+          description: "Attributes that needs to be added to this endpoint"
+          required: true
+          schema:
+            $ref: "#/definitions/Login"
+      responses:
+        200:
+          description: "Login success"
+          schema:
+            $ref: "#/definitions/LoginResponse"
+        400:
+          description: "Invalid input"
+          schema:
+            type: "string"
+            example: "record not found"
+        422:
+          description: "Invalid input"
+          schema:
+            type: "string"
+            example: "Key: 'RegisterRequest.Username' Error:Field validation for 'Username' failed on the 'required' tag\nKey: 'RegisterRequest.Password' Error:Field validation for 'Password' failed on the 'required' tag"
+  /product:
+    post:
+      tags:
+        - "admin"
+      summary: "Create new product"
+      description: ""
+      operationId: "postProduct"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "body"
+          in: "body"
+          description: "Attributes that needs to be added to this endpoint"
+          required: true
+          schema:
+            $ref: "#/definitions/Product"
+      responses:
+        200:
+          description: "Create product success"
+          schema:
+            type: "string"
+            example: "OK"
+        422:
+          description: "Invalid input"
+          schema:
+            type: "string"
+            example: "Key: 'RegisterRequest.Username' Error:Field validation for 'Username' failed on the 'required' tag\nKey: 'RegisterRequest.Password' Error:Field validation for 'Password' failed on the 'required' tag"
+    get:
+      tags:
+        - "product"
+      summary: "Get all product"
+      description: ""
+      operationId: "getProduct"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Get product success"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Product"
+  /buy:
+    post:
+      tags:
+        - "transaction"
+      summary: "Buy some products"
+      description: ""
+      operationId: "postBuy"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "body"
+          in: "body"
+          description: "Attributes that needs to be added to this endpoint"
+          required: true
+          schema:
+            type: "array"
+            items:
+              properties:
+                id_product:
+                  type: "integer"
+                  format: "int64"
+                amount:
+                  type: "integer"
+                  format: "int64"
+      responses:
+        200:
+          description: "Create product success"
+          schema:
+            type: "string"
+            example: "OK"
+        422:
+          description: "Invalid input"
+          schema:
+            type: "string"
+            example: "some id products doesn't exist"
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "http://petstore.swagger.io/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      write:pets: "modify pets in your account"
+      read:pets: "read your pets"
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  Product:
+    type: "object"
+    required:
+      - "name"
+      - "price"
+      - "stock"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      price:
+        type: "number"
+      stock:
+        type: "integer"
+  Register:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      username:
+        type: "string"
+      password:
+        type: "string"
+      role:
+        type: "string"
+        enum: ['USER','ADMIN']
+  Login:
+    type: "object"
+    properties:
+      username:
+        type: "string"
+      password:
+        type: "string"
+  LoginResponse:
+    type: "object"
+    properties:
+      tokenType:
+        type: "string"
+      token:
+        type: "string"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
